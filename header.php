@@ -22,16 +22,16 @@ $uid = $_SESSION["uid"];
   <meta name="author" content="Coderthemes">
 
   <!-- App favicon -->
-  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="shortcut icon" href="<?php echo $base_url ?>/assets/images/favicon.ico">
 
   <!-- Theme Config Js -->
-  <script src="assets/js/config.js"></script>
+  <script src="<?php echo $base_url ?>/assets/js/config.js"></script>
 
   <!-- Vendor css -->
-  <link href="assets/css/vendors.min.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo $base_url ?>/assets/css/vendors.min.css" rel="stylesheet" type="text/css">
 
   <!-- App css -->
-  <link href="assets/css/app.min.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo $base_url ?>/assets/css/app.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -40,3 +40,8 @@ $uid = $_SESSION["uid"];
 
 <?php include __DIR__ . "/views/layout/navbar.php"; ?>
 <?php include __DIR__ . "/views/layout/main_sidebar.php"; ?>
+
+
+<div class="content-page">
+
+<div class="container-fluid">

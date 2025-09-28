@@ -1,3 +1,7 @@
+</div>
+</div>
+
+
 <!-- Footer Start -->
 <footer class="footer">
   <div class="container-fluid">
@@ -24,19 +28,19 @@
 
 
 <!-- Vendor js -->
-<script src="assets/js/vendors.min.js"></script>
+<script src="<?php echo $base_url ?>/assets/js/vendors.min.js"></script>
 
 <!-- App js -->
-<script src="assets/js/app.js"></script>
+<script src="<?php echo $base_url ?>/assets/js/app.js"></script>
 
 <!-- E Charts js -->
-<script src="assets/plugins/chartjs/chart.umd.js"></script>
+<script src="<?php echo $base_url ?>/assets/plugins/chartjs/chart.umd.js"></script>
 
 <!-- Custom table -->
-<script src="assets/js/pages/custom-table.js"></script>
+<script src="<?php echo $base_url ?>/assets/js/pages/custom-table.js"></script>
 
 <!-- Dashboard Page js -->
-<script src="assets/js/pages/dashboard.js"></script>
+<script src="<?php echo $base_url ?>/assets/js/pages/dashboard.js"></script>
 
 </body>
 

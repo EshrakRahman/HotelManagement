@@ -2,15 +2,15 @@
 <div class="sidenav-menu">
 
   <!-- Brand Logo -->
-  <a href="index.html" class="logo">
+  <a href="<?php echo $base_url; ?>/home" class="logo">
     <span class="logo logo-light">
-      <span class="logo-lg"><img src="assets/images/logo.png" alt="logo"></span>
-      <span class="logo-sm"><img src="assets/images/logo-sm.png" alt="small logo"></span>
+      <span class="logo-lg"><img src="<?php echo $base_url ?>/assets/images/logo.png" alt="logo"></span>
+      <span class="logo-sm"><img src="<?php echo $base_url ?>/assets/images/logo-sm.png" alt="small logo"></span>
     </span>
 
     <span class="logo logo-dark">
-      <span class="logo-lg"><img src="assets/images/logo-black.png" alt="dark logo"></span>
-      <span class="logo-sm"><img src="assets/images/logo-sm.png" alt="small logo"></span>
+      <span class="logo-lg"><img src="<?php echo $base_url ?>/assets/images/logo-black.png" alt="dark logo"></span>
+      <span class="logo-sm"><img src="<?php echo $base_url ?>/assets/images/logo-sm.png" alt="small logo"></span>
     </span>
   </a>
 
@@ -32,7 +32,7 @@
       <div class="d-flex justify-content-between align-items-center">
         <div>
           <a href="users-profile.html" class="link-reset">
-            <img src="assets/images/users/user-3.jpg" alt="user-image" class="rounded-circle mb-2 avatar-md">
+            <img src="<?php echo $base_url ?>/assets/images/users/user-3.jpg" alt="user-image" class="rounded-circle mb-2 avatar-md">
             <span class="sidenav-user-name fw-bold">Geneva K.</span>
             <span class="fs-12 fw-semibold" data-lang="user-role">Art Director</span>
           </a>
@@ -101,142 +101,92 @@
       <li class="side-nav-item">
         <a data-bs-toggle="collapse" href="#sidebarEcommerce" aria-expanded="false" aria-controls="sidebarEcommerce" class="side-nav-link">
           <span class="menu-icon"><i data-lucide="shopping-bag"></i></span>
-          <span class="menu-text" data-lang="ecommerce">Ecommerce</span>
+          <span class="menu-text" data-lang="ecommerce">Hotel Management</span>
           <span class="menu-arrow"></span>
         </a>
         <div class="collapse" id="sidebarEcommerce">
           <ul class="sub-menu">
             <li class="side-nav-item">
               <a data-bs-toggle="collapse" href="#sidebarProducts" aria-expanded="false" aria-controls="sidebarProducts" class="side-nav-link">
-                <span class="menu-text" data-lang="eco-products">Products</span>
+                <span class="menu-text" data-lang="eco-products">Rooms</span>
                 <span class="menu-arrow"></span>
               </a>
               <div class="collapse" id="sidebarProducts">
                 <ul class="sub-menu">
                   <li class="side-nav-item">
-                    <a href="ecommerce-products.html" class="side-nav-link">
-                      <span class="menu-text" data-lang="eco-pro-listing">Listing</span>
+                    <a href="<?php echo $base_url ?>/guest" class="side-nav-link">
+                      <span class="menu-text" data-lang="eco-pro-listing">All Guest</span>
+                    </a>
+                  </li>
+
+                  <li class="side-nav-item">
+                    <a href="<?php echo $base_url ?>/guest/customerDetails" class="side-nav-link">
+                      <span class="menu-text" data-lang="eco-pro-details">Guest Profile</span>
                     </a>
                   </li>
                   <li class="side-nav-item">
-                    <a href="ecommerce-products-grid.html" class="side-nav-link">
-                      <span class="menu-text" data-lang="eco-pro-grid">Products Grid</span>
-                    </a>
-                  </li>
-                  <li class="side-nav-item">
-                    <a href="ecommerce-product-details.html" class="side-nav-link">
-                      <span class="menu-text" data-lang="eco-pro-details">Product Details</span>
-                    </a>
-                  </li>
-                  <li class="side-nav-item">
-                    <a href="ecommerce-add-product.html" class="side-nav-link">
-                      <span class="menu-text" data-lang="eco-pro-add">Add Product</span>
+                    <a href="<?php echo $base_url ?>/guest/addGuest" class="side-nav-link">
+                      <span class="menu-text" data-lang="eco-pro-add">Add Booking</span>
                     </a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="side-nav-item">
-              <a href="ecommerce-categories.html" class="side-nav-link">
-                <span class="menu-text" data-lang="eco-categories">Categories</span>
-              </a>
-            </li>
-            <li class="side-nav-item">
-              <a data-bs-toggle="collapse" href="#sidebarOrders" aria-expanded="false" aria-controls="sidebarOrders" class="side-nav-link">
-                <span class="menu-text" data-lang="eco-orders">Orders</span>
-                <span class="menu-arrow"></span>
-              </a>
-              <div class="collapse" id="sidebarOrders">
-                <ul class="sub-menu">
-                  <li class="side-nav-item">
-                    <a href="ecommerce-orders.html" class="side-nav-link">
-                      <span class="menu-text" data-lang="eco-orders-list">Orders</span>
-                    </a>
-                  </li>
-                  <li class="side-nav-item">
-                    <a href="ecommerce-order-details.html" class="side-nav-link">
-                      <span class="menu-text" data-lang="eco-order-details">Order Details</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="side-nav-item">
-              <a href="ecommerce-customers.html" class="side-nav-link">
-                <span class="menu-text" data-lang="eco-customers">Customers</span>
+              <a href="<?php echo $base_url ?>/guest/categories" class="side-nav-link">
+                <span class="menu-text" data-lang="eco-categories">Room Types</span>
               </a>
             </li>
 
-            <li class="side-nav-item">
-              <a data-bs-toggle="collapse" href="#sidebarSellers" aria-expanded="false" aria-controls="sidebarSellers" class="side-nav-link">
-                <span class="menu-text" data-lang="eco-sellers"> Sellers </span>
-                <span class="menu-arrow"></span>
-              </a>
-              <div class="collapse" id="sidebarSellers">
-                <ul class="sub-menu">
-                  <li class="side-nav-item">
-                    <a href="ecommerce-sellers.html" class="side-nav-link">
-                      <span class="menu-text" data-lang="eco-sellers-list">Sellers</span>
-                    </a>
-                  </li>
-                  <li class="side-nav-item">
-                    <a href="ecommerce-seller-details.html" class="side-nav-link">
-                      <span class="menu-text" data-lang="eco-sellers-details">Sellers Details</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+
 
             <li class="side-nav-item">
-              <a href="ecommerce-reviews.html" class="side-nav-link">
-                <span class="menu-text" data-lang="eco-reviews">Reviews</span>
+              <a href="<?php echo $base_url; ?>/review" class="side-nav-link">
+                <span class="menu-text" data-lang="eco-reviews">Feedback</span>
               </a>
             </li>
           </ul>
         </div>
       </li>
-
-
 
       <!-- User -->
       <li class="side-nav-item">
         <a data-bs-toggle="collapse" href="#sidebarUsers" aria-expanded="false" aria-controls="sidebarUsers" class="side-nav-link">
           <span class="menu-icon"><i data-lucide="users"></i></span>
-          <span class="menu-text" data-lang="users"> Users </span>
+          <span class="menu-text" data-lang="users"> Employees </span>
           <span class="menu-arrow"></span>
         </a>
         <div class="collapse" id="sidebarUsers">
           <ul class="sub-menu">
             <li class="side-nav-item">
-              <a href="users-contacts.html" class="side-nav-link">
-                <span class="menu-text" data-lang="contacts">Contacts</span>
+              <a href="<?php echo $base_url; ?>/user" class="side-nav-link">
+                <span class="menu-text" data-lang="contacts">Employee Contacts</span>
               </a>
             </li>
             <li class="side-nav-item">
-              <a href="users-profile.html" class="side-nav-link">
-                <span class="menu-text" data-lang="profile">Profile</span>
+              <a href="<?php echo $base_url ?>/user/empProfile" class="side-nav-link">
+                <span class="menu-text" data-lang="profile">Employee Profile</span>
               </a>
             </li>
             <li class="side-nav-item">
-              <a href="users-roles.html" class="side-nav-link">
-                <span class="menu-text" data-lang="roles">Roles</span>
+              <a href="<?php echo $base_url ?>/user/roles" class="side-nav-link">
+                <span class="menu-text" data-lang="roles">Job Roles</span>
               </a>
             </li>
             <li class="side-nav-item">
-              <a href="users-role-details.html" class="side-nav-link">
+              <a href="<?php echo $base_url ?>/user/userRolesDetails" class="side-nav-link">
                 <span class="menu-text" data-lang="role-details">Role Details</span>
               </a>
             </li>
             <li class="side-nav-item">
-              <a href="users-permissions.html" class="side-nav-link">
-                <span class="menu-text" data-lang="permissions">Permissions</span>
+              <a href="<?php echo $base_url ?>/user/userPermission" class="side-nav-link">
+                <span class="menu-text" data-lang="permissions">Access Permissions</span>
               </a>
             </li>
           </ul>
         </div>
       </li>
-    <!-- invoice -->
+      <!-- invoice -->
       <li class="side-nav-item">
         <a data-bs-toggle="collapse" href="#sidebarInvoice" aria-expanded="false" aria-controls="sidebarInvoice" class="side-nav-link">
           <span class="menu-icon"><i data-lucide="receipt-text"></i></span>
@@ -246,24 +196,24 @@
         <div class="collapse" id="sidebarInvoice">
           <ul class="sub-menu">
             <li class="side-nav-item">
-              <a href="invoices.html" class="side-nav-link">
+              <a href="<?php echo $base_url ?>/invoice" class="side-nav-link">
                 <span class="menu-text" data-lang="invoices">Invoices</span>
               </a>
             </li>
             <li class="side-nav-item">
-              <a href="invoice-details.html" class="side-nav-link">
-                <span class="menu-text" data-lang="invoice-details">Single Invoice</span>
+              <a href="<?php echo $base_url ?>/invoice/invoiceDetails" class="side-nav-link">
+                <span class="menu-text" data-lang="invoice-details">View Invoice</span>
               </a>
             </li>
             <li class="side-nav-item">
-              <a href="invoice-create.html" class="side-nav-link">
-                <span class="menu-text" data-lang="invoice-create">New Invoice</span>
+              <a href="<?php echo $base_url ?>/invoice/createInvoice" class="side-nav-link">
+                <span class="menu-text" data-lang="invoice-create">Create Invoice</span>
               </a>
             </li>
           </ul>
         </div>
       </li>
-  <!-- support center -->
+      <!-- support center -->
       <li class="side-nav-item">
         <a data-bs-toggle="collapse" href="#sidebarTickets" aria-expanded="false" aria-controls="sidebarTickets" class="side-nav-link">
           <span class="menu-icon"><i data-lucide="life-buoy"></i></span>
@@ -274,24 +224,22 @@
           <ul class="sub-menu">
             <li class="side-nav-item">
               <a href="tickets-list.html" class="side-nav-link">
-                <span class="menu-text" data-lang="tickets">Tickets List</span>
+                <span class="menu-text" data-lang="tickets">Tickets</span>
               </a>
             </li>
             <li class="side-nav-item">
               <a href="ticket-details.html" class="side-nav-link">
-                <span class="menu-text" data-lang="ticket-details">Ticket Details</span>
+                <span class="menu-text" data-lang="ticket-details">View Ticket</span>
               </a>
             </li>
             <li class="side-nav-item">
               <a href="ticket-create.html" class="side-nav-link">
-                <span class="menu-text" data-lang="ticket-create">New Ticket</span>
+                <span class="menu-text" data-lang="ticket-create">Create Ticket</span>
               </a>
             </li>
           </ul>
         </div>
       </li>
-
-
     </ul>
   </div>
 </div>

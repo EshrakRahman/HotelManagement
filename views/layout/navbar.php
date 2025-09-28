@@ -6,20 +6,20 @@
         <!-- Logo light -->
         <a href="index.html" class="logo-light">
           <span class="logo-lg">
-            <img src="assets/images/logo.png" alt="logo">
+            <img src="<?php echo $base_url ?>/assets/images/logo.png" alt="logo">
           </span>
           <span class="logo-sm">
-            <img src="assets/images/logo-sm.png" alt="small logo">
+            <img src="<?php echo $base_url ?>/assets/images/logo-sm.png" alt="small logo">
           </span>
         </a>
 
         <!-- Logo Dark -->
         <a href="index.html" class="logo-dark">
           <span class="logo-lg">
-            <img src="assets/images/logo-black.png" alt="dark logo">
+            <img src="<?php echo $base_url ?>/assets/images/logo-black.png" alt="dark logo">
           </span>
           <span class="logo-sm">
-            <img src="assets/images/logo-sm.png" alt="small logo">
+            <img src="<?php echo $base_url ?>/assets/images/logo-sm.png" alt="small logo">
           </span>
         </a>
       </div>
@@ -48,11 +48,11 @@
       <div class="topbar-item">
         <div class="dropdown">
           <button class="topbar-link fw-bold" data-bs-toggle="dropdown" data-bs-offset="0,24" type="button" aria-haspopup="false" aria-expanded="false">
-            <img src="assets/images/flags/us.svg" alt="user-image" class="rounded" height="20" id="selected-language-image">
+            <img src="<?php echo $base_url ?>/assets/images/flags/us.svg" alt="user-image" class="rounded" height="20" id="selected-language-image">
           </button>
           <div class="dropdown-menu dropdown-menu-end">
             <a href="javascript:void(0);" class="dropdown-item" data-translator-lang="en" title="English">
-              <img src="assets/images/flags/us.svg" alt="English" class="me-1 rounded" height="18" data-translator-image>
+              <img src="<?php echo $base_url ?>/assets/images/flags/us.svg" alt="English" class="me-1 rounded" height="18" data-translator-image>
               <span class="align-middle">English</span>
             </a>
           </div> <!-- end dropdown-menu-->
@@ -122,7 +122,7 @@
       <div class="topbar-item nav-user">
         <div class="dropdown">
           <a class="topbar-link dropdown-toggle drop-arrow-none px-2" data-bs-toggle="dropdown" data-bs-offset="0,19" href="#!" aria-haspopup="false" aria-expanded="false">
-            <img src="assets/images/users/user-3.jpg" width="32" class="rounded-circle me-lg-2 d-flex" alt="user-image">
+            <img src="<?php echo $base_url ?>/assets/images/users/user-3.jpg" width="32" class="rounded-circle me-lg-2 d-flex" alt="user-image">
             <div class="d-lg-flex align-items-center gap-1 d-none">
               <h5 class="my-0">Geneva</h5>
               <i class="ti ti-chevron-down align-middle"></i>
