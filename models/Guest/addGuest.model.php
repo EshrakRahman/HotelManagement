@@ -74,6 +74,6 @@ class Guest extends Model
     {
         global $db;
         $stmt = $db->query("SELECT * FROM guests ORDER BY created_at DESC");
-        return $stmt->fetchAll(PDO::FETCH_OBJ);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }
